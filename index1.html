@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Image Gallery</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="welcomeMessage">Temple Image Gallery</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search for a temple...">
+            <button onclick="searchTemple()">Search</button>
+        </div>
+        <div class="filter-buttons">
+            <button class="active" data-filter="all">All</button>
+            <button data-filter="nashik">Nashik</button>
+            <button data-filter="pune">Pune</button>
+            <button data-filter="mumbai">Mumbai</button>
+        </div>
+        <div class="gallery">
+            <!-- Nashik Temples -->
+            <div class="image-card" data-city="nashik">
+                <img src="NashikTemple1.png" alt="Trimbakeshwar Temple">
+                <p>Trimbakeshwar Temple</p>
+            </div>
+            <div class="image-card" data-city="nashik">
+                <img src="NashikTemple2.png" alt="Ganga Godavari Temple">
+                <p>Ganga Godavari Temple</p>
+            </div>
+            <div class="image-card" data-city="nashik">
+                <img src="NavshyaGanpatiTemple .png" alt="Navshya Ganpati Temple">
+                <p>Navshya Ganpati Temple</p>
+            </div>
+            <div class="image-card" data-city="nashik">
+                <img src="Gondeshwar temple Sinnar.png" alt="Gondeshwar Temple">
+                <p>Gondeshwar Temple</p>
+            </div>
+            <div class="image-card" data-city="nashik">
+                <img src="Chambhar Leni.png" alt="Chambhar Leni">
+                <p>Chambhar Leni</p>
+            </div>
+            <div class="image-card" data-city="nashik">
+                <img src="Shree Saptshrungi Gad.png" alt="Shree Saptshrungi Gad">
+                <p>Shree Saptshrungi Gad Vani</p>
+            </div>
+
+            <!-- Pune Temples -->
+            <div class="image-card" data-city="pune">
+                <img src="Ramdara Mandir.png" alt="Ramdara Mandir">
+                <p>Ramdara Mandir</p>
+            </div>
+            <div class="image-card" data-city="pune">
+                <img src="Chaturshrungi Temple.png" alt="Chaturshrungi Temple">
+                <p>Chaturshrungi Temple</p>
+            </div>
+           
+            <div class="image-card" data-city="pune">
+                <img src=" Sri Balaji Mandir.png" alt=" Sri Balaji Mandir">
+                <p> Sri Balaji Mandir</p>
+            </div>
+            <div class="image-card" data-city="pune">
+                <img src="Dagdusheth Halwai Ganpati Temple.png" alt="Dagdusheth Halwai Ganpati">
+                <p>Dagadusheth Halwai Ganpati</p>
+            </div>
+            <div class="image-card" data-city="pune">
+                <img src="Neelkanteshwar Temple.png" alt="Neelkanteshwar Temple">
+                <p>Neelkanteshwar Temple</p>
+            </div>
+            <div class="image-card" data-city="pune">
+                <img src="ISKCON NVCC Temple.png" alt="ISKCON NVCC Temple">
+                <p>ISKCON NVCC Temple</p>
+            </div>
+            <!-- Mumbai Temples -->
+            <div class="image-card" data-city="mumbai">
+                <img src="Siddhivinayak TempleMumbai.png" alt="Siddhivinayak Temple">
+                <p>Siddhivinayak Temple</p>
+            </div>
+            <div class="image-card" data-city="mumbai">
+                <img src="ISKCON Temple.png" alt="ISKCON Temple">
+                <p>ISKCON Temple</p>
+            </div>
+            <div class="image-card" data-city="mumbai">
+                <img src="Mahalakshmi Temple.png" alt="Mahalakshmi Temple">
+                <p>Mahalakshmi Temple</p>
+            </div>
+            <div class="image-card" data-city="mumbai">
+                <img src="Swaminarayan Temple.png" alt="Swaminarayan Temple">
+                <p>Swaminarayan Temple</p>
+            </div> 
+           
+            <div class="image-card" data-city="mumbai">
+                <img src="Mumbai Trimandir.png" alt="Mumbai Trimandir">
+                <p>Mumbai Trimandir</p>
+            </div> 
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="caption"></div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Go to top">↑</button>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Temple Image Gallery. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
